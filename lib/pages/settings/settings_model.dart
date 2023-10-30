@@ -1,0 +1,34 @@
+import '/comp/editname/editname_widget.dart';
+import '/comp/link_image_perfil/link_image_perfil_widget.dart';
+import '/comp/nav_bar/nav_bar_widget.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'settings_widget.dart' show SettingsWidget;
+import 'package:aligned_dialog/aligned_dialog.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+
+class SettingsModel extends FlutterFlowModel<SettingsWidget> {
+  ///  State fields for stateful widgets in this page.
+
+  // Model for NavBar component.
+  late NavBarModel navBarModel;
+
+  /// Initialization and disposal methods.
+
+  void initState(BuildContext context) {
+    navBarModel = createModel(context, () => NavBarModel());
+  }
+
+  void dispose() {
+    navBarModel.dispose();
+  }
+
+  /// Action blocks are added here.
+
+  /// Additional helper methods are added here.
+}
